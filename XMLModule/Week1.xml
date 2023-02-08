@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<traveldiaries>
+
+<Carl>
+<date type="date">2023-01-03</date>
+<title>My Holidays</title>
+<location>Paris</location>
+<description>The city of love has a wealth of famous monuments for tourists to see, including the Eiffel Tower, the Louvre, and other gardens.</description>
+</Carl>
+
+<Gerald>
+<date type="date">2022-03-06</date>
+<title>Trip to Europe</title>
+<location>Greece</location>
+<description>
+It's great that there are so many different ways to spend time in Greece since it is one of our go-to summertime spots for some much-needed rest and recuperation by the sea.
+</description>
+</Gerard>
+
+<Clara>
+<date type="date">2022-09-12</date>
+<title>Wonderful Asia</title>
+<location>Japan</location>
+<description></description>
+</Clara>
+
+
+
+  </traveldiaries>
