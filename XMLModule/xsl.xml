@@ -8,10 +8,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <table border="10">
       <tr bgcolor="#9acd32">
         
-        <th>date</th>
+        <th>Date</th>
         <th>Title</th>
-        <th>location</th>
-        <th>description</th>
+        <th>Location</th>
+        <th>Description</th>
         
       </tr>
       <xsl:for-each select="traveldiaries/diary">
