@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+xmlns:td="http://example.com/traveldiaries">
+	<xsl:output method="html" encoding="UTF-8" indent="yes" />
 	<xsl:template match="/">
 		<html>
 			<head>
-				<link rel="stylesheet" type="text/css" href="styles.css"/>
+				<link rel="stylesheet" type="text/css" href="styles.css" />
 			</head>
 			<body>
-				<h2>Travel Diaries</h2>
+				<div class="header">
+					<h1>Travel Diaries</h1>
+				</div>
+				<hr />
 				<table>
 					<tr>
 						<th>Date</th>
@@ -15,20 +20,20 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 						<th>Location</th>
 						<th>Description</th>
 					</tr>
-					<xsl:for-each select="traveldiaries/diary">
-						<xsl:sort select="date"/>
+					<xsl:for-each select="//td:diary">
+						<xsl:sort select="td:date"/>
 						<tr>
 							<td>
-								<xsl:value-of select="date" />
+								<xsl:value-of select="td:date" />
 							</td>
 							<td>
-								<xsl:value-of select="title" />
+								<xsl:value-of select="td:title" />
 							</td>
 							<td>
-								<xsl:value-of select="location" />
+								<xsl:value-of select="td:location" />
 							</td>
 							<td>
-								<xsl:value-of select="description" />
+								<xsl:value-of select="td:description" />
 							</td>
 						</tr>
 					</xsl:for-each>

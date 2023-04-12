@@ -1,29 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<traveldiaries>
-
-<diary>
-<date type="date">2023-01-03</date>
-<title>My Holidays</title>
-<location>Paris</location>
-<description>The city of love has a wealth of famous monuments for tourists to see, including the Eiffel Tower, the Louvre, and other gardens.</description>
-</diary>
-
-<diary>
-<date type="date">2022-03-06</date>
-<title>Trip to Europe</title>
-<location>Greece</location>
-<description>
-It's great that there are so many different ways to spend time in Greece since it is one of our go-to summertime spots for some much-needed rest and recuperation by the sea.
-</description>
-</diary>
-
-<diary>
-<date type="date">2022-09-12</date>
-<title>Wonderful Asia</title>
-<location>Japan</location>
-<description>Japan is a fascinating place to visit because it combines the allure of a foreign culture with the modern trappings of a global leader in the arts, fashion, and technology.</description>
-</diary>
-
-
-
-  </traveldiaries>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="traveldiaries.xsl"?>
+<traveldiaries xmlns="http://example.com/traveldiaries">
+	<diary>
+		<date type="date">2023-01-03</date>
+		<title>My Holidays</title>
+		<location>Paris</location>
+		<description>
+			The city of love has a wealth of famous monuments for tourists to see,
+			including the Eiffel Tower, the Louvre, and other gardens.
+		</description>
+	</diary>
+	<diary>
+		<date type="date">2020-03-06</date>
+		<title>Trip to Europe</title>
+		<location>Greece</location>
+		<description>
+			It's great that there are so many different ways to spend time in Greece since
+			it is one of our go-to summertime spots for some much-needed rest and recuperation by the sea.
+		</description>
+	</diary>
+	<diary>
+		<date type="date">2022-09-04</date>
+		<title>Wonderful Asia</title>
+		<location>Japan</location>
+		<description>
+			Japan is a fascinating place to visit because it combines the allure of a foreign culture with the
+			modern trappings of a global leader in the arts, fashion, and technology.
+		</description>
+	</diary>
+</traveldiaries>
