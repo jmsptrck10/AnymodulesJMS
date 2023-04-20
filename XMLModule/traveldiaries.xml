@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="traveldiaries.xsl"?>
-<traveldiaries xmlns="http://example.com/traveldiaries">
+<traveldiaries xmlns="http://example.com/traveldiaries"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://example.com/traveldiaries traveldiaries.xsd">
 	<diary>
-		<date type="date">2023-01-03</date>
+		<date>2023-01-03</date>
 		<title>My Holidays</title>
 		<location>Paris</location>
 		<description>
@@ -11,7 +13,7 @@
 		</description>
 	</diary>
 	<diary>
-		<date type="date">2020-03-06</date>
+		<date>2020-03-06</date>
 		<title>Trip to Europe</title>
 		<location>Greece</location>
 		<description>
@@ -20,7 +22,7 @@
 		</description>
 	</diary>
 	<diary>
-		<date type="date">2022-09-04</date>
+		<date>2022-09-04</date>
 		<title>Wonderful Asia</title>
 		<location>Japan</location>
 		<description>

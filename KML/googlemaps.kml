@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+ xmlns:gx="http://www.google.com/kml/ext/2.2">
+<Document>
+  <name>My document</name>
+  <description>Content</description>
+  <Style id="Lump">
+    <LineStyle>
+      <color>CD0000FF</color>
+      <width>2</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>9AFF0000</color>
+    </PolyStyle>
+  </Style>
+  <Style id="Path">
+    <LineStyle>
+      <color>FF0000FF</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+  <Style id="markerstyle">
+    <IconStyle>
+      <Icon>
+        <href>
+          http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png
+        </href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>NAME</name>
+    <description>YES</description>
+    <styleUrl>#Path</styleUrl>
+    <Polygon>
+      <tessellate>1</tessellate>
+      <altitudeMode>clampToGround</altitudeMode>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates>
+            -0.755631,51.627958,0.0
+            -0.755363,51.628330,0.0
+            -0.754915,51.628261,0.0
+            -0.754569,51.628653,0.0
+            -0.753536,51.628586,0.0
+            -0.753113,51.628598,0.0
+            -0.752812,51.628490,0.0
+            -0.752391,51.628278,0.0
+            -0.751974,51.628001,0.0
+            -0.751459,51.627575,0.0
+            -0.751352,51.627428,0.0
+            -0.751824,51.627162,0.0
+            -0.751934,51.627145,0.0
+            -0.752047,51.627112,0.0
+            -0.752331,51.627139,0.0
+            -0.755631,51.627958,0.0
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  <Placemark>
+    <name>Marker with Embedded Image</name>
+    <styleUrl>#markerstyle</styleUrl>
+    <Point>
+      <coordinates>-0.755,51.628</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data name="imageUrl">
+        <value>https://example.com/your-image-url.jpg</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+</Document>
+</kml>

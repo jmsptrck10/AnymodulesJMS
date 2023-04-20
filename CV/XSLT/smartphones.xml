@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="smartphone_filtered_table.xsl"?>
+<p:smartphoneCatalog
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.com/xsd smartphones.xsd"
+    xmlns:p="http://www.example.com/xsd">
+	<p:item id="iphone13">
+		<p:make>Apple</p:make>
+		<p:model>iPhone 13</p:model>
+		<p:storage>128</p:storage>
+		<p:color>Blue</p:color>
+		<p:price>799</p:price>
+	</p:item>
+	<p:item id="galaxyS22">
+		<p:make>Samsung</p:make>
+		<p:model>Galaxy S22</p:model>
+		<p:storage>128</p:storage>
+		<p:color>Black</p:color>
+		<p:price>999</p:price>
+	</p:item>
+	<p:item id="pixel6">
+		<p:make>Google</p:make>
+		<p:model>Pixel 6</p:model>
+		<p:storage>128</p:storage>
+		<p:color>Green</p:color>
+		<p:price>599</p:price>
+	</p:item>
+	<p:item id="oneplus9">
+		<p:make>OnePlus</p:make>
+		<p:model>OnePlus 9</p:model>
+		<p:storage>128</p:storage>
+		<p:color>Silver</p:color>
+		<p:price>729</p:price>
+	</p:item>
+	<p:item id="xiaomi12">
+		<p:make>Xiaomi</p:make>
+		<p:model>Xiaomi 12</p:model>
+		<p:storage>256</p:storage>
+		<p:color>Black</p:color>
+		<p:price>749</p:price>
+	</p:item>
+</p:smartphoneCatalog>

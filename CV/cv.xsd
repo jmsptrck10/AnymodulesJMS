@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name="gradeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="A"/>
+			<xs:enumeration value="B"/>
+			<xs:enumeration value="C"/>
+			<xs:enumeration value="D"/>
+			<xs:enumeration value="E"/>
+			<xs:enumeration value="F"/>
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+			<xs:enumeration value="4"/>
+			<xs:enumeration value="5"/>
+			<xs:enumeration value="6"/>
+			<xs:enumeration value="7"/>
+			<xs:enumeration value="8"/>
+			<xs:enumeration value="9"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="cv">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="personal_information"/>
+				<xs:element ref="professional_summary"/>
+				<xs:element ref="work_experience"/>
+				<xs:element ref="education"/>
+				<xs:element ref="awards"/>
+				<xs:element ref="skills"/>
+				<xs:element ref="interests"/>
+				<xs:element ref="languages"/>
+				<xs:element ref="references"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="personal_information">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"/>
+				<xs:element name="address" type="xs:string"/>
+				<xs:element name="telephone" type="xs:string"/>
+				<xs:element name="email" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="professional_summary">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="summary" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="work_experience">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="job" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="company" type="xs:string"/>
+							<xs:element name="title" type="xs:string"/>
+							<xs:element name="period" type="xs:string"/>
+							<xs:element name="description" type="xs:string"/>
+							<xs:element name="key_responsibilities">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="responsibility" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="key_achievements">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="achievement" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="education">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="institution" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string"/>
+							<xs:element name="period" type="xs:string"/>
+							<xs:element name="degree" minOccurs="0" type="xs:string"/>
+							<xs:element name="subjects" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="subject" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="grade" type="gradeType"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="qualifications" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="qualification" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="grade" type="gradeType"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="awards">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="award" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attribute name="date" type="xs:string"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="skills">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="skill" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="interests">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="interest" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="languages">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="language" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attribute name="fluency" type="xs:string"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="references">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="reference" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string"/>
+							<xs:element name="title" type="xs:string"/>
+							<xs:element name="company" type="xs:string"/>
+							<xs:element name="telephone" type="xs:string"/>
+							<xs:element name="email" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
+
+
+

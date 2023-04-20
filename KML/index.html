@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps KML Example</title>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyCBFvZotuy0eXEeLNhH-Vz9QupNq1wFdLE"></script>
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 14,
+                center: { lat: 51.628, lng: -0.755 },
+            });
+
+            const kmlLayer = new google.maps.KmlLayer({
+                url: "googlemaps.kml",
+                map: map,
+                preserveViewport: true,
+            });
+
+            kmlLayer.addListener("click", (event) => {
+                const imageUrl = event.featureData.extendedData.getValue("imageUrl");
+                if (imageUrl) {
+                    const infoWindow = new google.maps.InfoWindow({
+                        content: `<img src="${imageUrl}" alt="Embedded Image" style="width: 200px; height: auto;">`,
+                    });
+                    infoWindow.setPosition(event.latLng);
+                    infoWindow.open(map);
+                }
+            });
+        }
+    </script>
+    <style>
+        #map {
+            height: 100%;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body onload="initMap()">
+    <div id="map"></div>
+</body>
+</html>

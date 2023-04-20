@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cv>
+	<personal_information>
+		<name>James Patrick Arellano</name>
+		<address>9 Mablethorpe Road, SW6 6AQ, London</address>
+		<telephone>07402775077</telephone>
+		<email>Jparellano2214@gmail.com</email>
+	</personal_information>
+	<professional_summary>
+		<summary>A Dedicated and enthusiastic student eager to learn new skills and information. Applies education and focused approach to take on new challenges. Learns quickly and brings acquired software engineering abilities.</summary>
+	</professional_summary>
+	<work_experience>
+		<job>
+			<period>October 2020 - April 2021</period>
+			<company>TechGenius Ltd., Manchester, UK</company>
+			<position>Junior Software Developer (Part-time)</position>
+			<description>Actively contributed to a team of software engineers, focusing on the development and maintenance of web applications, with an emphasis on front-end development and enhancing user experience.</description>
+			<key_responsibilities>
+				<responsibility>Crafted and integrated new features utilising HTML, CSS, and JavaScript within the company's web applications.</responsibility>
+				<responsibility>Engaged in code reviews and liaised with senior developers to uphold high code quality standards.</responsibility>
+				<responsibility>Aided in pinpointing and rectifying software bugs, ultimately augmenting overall application performance.</responsibility>
+			</key_responsibilities>
+			<key_achievements>
+				<achievement>Orchestrated a user-centric interface revamp for the primary web application, resulting in a 15% surge in user engagement and eliciting commendatory customer feedback.</achievement>
+			</key_achievements>
+		</job>
+		<job>
+			<period>May 2021 - September 2021</period>
+			<company>DataSolutions Ltd., London, UK</company>
+			<position>Data Engineering Intern (Part-time)</position>
+			<description>Assisted the data engineering team in building data pipelines and maintaining data infrastructure for the organization, enhancing data accessibility and analysis capabilities.</description>
+			<key_responsibilities>
+				<responsibility>Developed Python scripts to automate data extraction, transformation, and loading (ETL) processes.</responsibility>
+				<responsibility>Assisted in maintaining the company's data warehouse, ensuring data accuracy and integrity.</responsibility>
+				<responsibility>Collaborated with data analysts to optimize data retrieval and visualization processes.</responsibility>
+			</key_responsibilities>
+			<key_achievements>
+				<achievement>Developed an automated data pipeline that reduced manual data processing time by 30%, increasing team efficiency and allowing for faster decision-making.</achievement>
+			</key_achievements>
+		</job>
+		<job>
+			<period>January 2022 - August 2022</period>
+			<company>MobileMinds Inc., Birmingham, UK</company>
+			<position>Android App Development Intern (Part-time)</position>
+			<description>Supported the mobile app development team in designing and implementing Android applications, improving user experience and satisfaction for the company's client base.</description>
+			<key_responsibilities>
+				<responsibility>Assisted in the development of new features for existing Android applications using Java and Kotlin.</responsibility>
+				<responsibility>Conducted thorough application testing to identify and resolve bugs and performance issues.</responsibility>
+				<responsibility>Collaborated with UI/UX designers to ensure optimal user experience across multiple device platforms.</responsibility>
+			</key_responsibilities>
+			<key_achievements>
+				<achievement>Developed a new in-app notification system, increasing user retention by 10% and improving overall user satisfaction with the company's mobile applications.</achievement>
+			</key_achievements>
+		</job>
+	</work_experience>
+	<education>
+		<institution>
+			<name>Buckinghamshire New University</name>
+			<period>September 2022 to Current</period>
+			<degree>Software Engineering Degree</degree>
+			<subjects>
+				<subject grade="C">Application Programming</subject>
+				<subject grade="C">Computer Architecture</subject>
+				<subject grade="B">Digital Technologies and Professional Practice</subject>
+				<subject grade="C">Networking</subject>
+				<subject grade="B">Programming Concepts</subject>
+				<subject grade="B">User Experience</subject>
+				<subject grade="C">Web Development</subject>
+				<subject grade="C">XML</subject>
+			</subjects>
+		</institution>
+		<institution>
+			<name>William Morris Sixth Form</name>
+			<period>September 2019 to August 2022</period>
+			<qualifications>
+				<qualification grade="4">Mathematics</qualification>
+				<qualification grade="4">English</qualification>
+				<qualification grade="D">BTEC IT</qualification>
+			</qualifications>
+		</institution>
+	</education>
+	<awards>
+		<award date="March 2021">TechGenius Innovation Award</award>
+		<award date="July 2022">MobileMinds Rising Star Award</award>
+	</awards>
+	<skills>
+		<skill>Knowledge of HTML, Java, XML, and C#</skill>
+		<skill>Multitasking</skill>
+		<skill>Time Management</skill>
+		<skill>Good Communication Skills</skill>
+		<skill>Attentive</skill>
+	</skills>
+	<interests>
+		<interest>Sports</interest>
+		<interest>Photography</interest>
+		<interest>Travelling</interest>
+	</interests>
+	<languages>
+		<language fluency="Fluent">English</language>
+		<language fluency="Native">Tagalog</language>
+	</languages>
+	<references>
+		<reference>
+			<name>John Smith</name>
+			<position>Senior Software Developer</position>
+			<company>TechGenius Ltd.</company>
+			<email>john.smith@techgenius.co.uk</email>
+			<telephone>+44 (0)20 1234 5678</telephone>
+		</reference>
+	</references>
+</cv>
+

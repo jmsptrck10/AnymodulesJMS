@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CV",
+    "\\KML",
+    "\\XMLModule"
   ],
+  "SelectedNode": "\\CV\\CV.xsd",
   "PreviewInSolutionExplorer": false
 }
